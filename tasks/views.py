@@ -39,3 +39,7 @@ def get_all_task(request):
         return JsonResponse(data)
     else:
         return HttpResponse("Method not allowed", status=500)
+
+
+def index(request):
+    return HttpResponse("Welcome to ansmake, go to <b>/task/all/</b> to get all tasks")
